@@ -17,6 +17,11 @@ public abstract class Position {
     private BigDecimal principalAmount;
     private Instant depositTime;
 
+    public Position(String walletAddress, String protocol, Instant depositTime) {
+        this.walletAddress = walletAddress;
+        this.protocol = protocol;
+        this.depositTime = depositTime;
+    }
 
     public Position(String walletAddress, String protocol, String assetSymbol, BigDecimal principalAmount, Instant depositTime) {
 
